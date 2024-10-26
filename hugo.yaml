@@ -1,0 +1,7 @@
+baseURL: https://brvtalcake.github.io
+languageCode: en-us
+title: brvtalblog
+
+module:
+  imports:
+    - path: github.com/joeroe/risotto
