@@ -24,9 +24,10 @@ a:hover {
   color: #86ce83;
   transition: 0.3s;
 }
+
 /* ul[class=tree] and every ul under it loses all alignment, and bullet
-		 * style.
-		 */
+ * style.
+ */
 ul.tree,
 ul.tree ul {
   list-style-type: none;
@@ -35,36 +36,78 @@ ul.tree ul {
 }
 
 /* Every ul under ul[class=tree] gets an indent of 1em, and a background
-		 * image (vertical line) applied to all nodes under it (repeat-y)
-		 */
+ * image (vertical line) applied to all nodes under it (repeat-y)
+ */
 ul.tree ul {
   padding-left: 1em;
-  background: url(./assets/vline.png) repeat-y;
+  background: url(/assets/vline.png) repeat-y;
 }
 
 /* ... except the last ul child in every ul; so no vertical lines for
-		 * the children of the last ul
-		  */
+ * the children of the last ul
+ */
 ul.tree ul:last-child {
   background: none;
 }
 
 /* Every li under ul[class=tree]
-		 *  - gets styling to make it bold and blue, and indented.
-		 *  - gets a background image (tilted T), to denote that its a node
-		 *  - sets height to match the height of background image
-		 */
+ *  - gets styling to make it bold and blue, and indented.
+ *  - gets a background image (tilted T), to denote that its a node
+ *  - sets height to match the height of background image
+ */
 ul.tree li {
   margin: 0;
   padding: 0 1.2em;
-  background: url(./assets/node.png) no-repeat;
+  background: url(/assets/node.png) no-repeat;
   line-height: 20px;
   font-weight: bold;
 }
 
 /*  The last li gets a different background image to denote it as the
-		 *  end of branch
-		 */
+ *  end of branch
+ */
 ul.tree li:nth-last-of-type(1) {
-  background: url(./assets/lastnode.png) no-repeat;
+  background: url(/assets/lastnode.png) no-repeat;
+}
+
+/*
+ * Menu must be sticky, but also needs to have a margin at the top after scrolling.
+ * It should virtually expand until the footer.
+ * It doesn't show up on top of anything, and nothing must overlap with it
+ */
+div#main-menu {
+  position: sticky;
+  top: 0;
+}
+
+div#main-text {
+  text-justify: inter-word;
+  text-align: justify;
+}
+
+.basic-col.three-col-layout.left {
+  float: left;
+  width: 15%;
+  height: 100%;
+}
+
+.basic-col.three-col-layout.right {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+.basic-col.three-col-layout.center {
+  float: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 65%;
+  height: 100%;
+}
+
+.basic-row.three-col-layout::after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 100%;
 }
