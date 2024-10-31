@@ -39,7 +39,17 @@ h2 {
   font-size: 2rem;
 }
 
+main h1 {
+  text-align: center;
+}
+
+article {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 article .header {
+  text-align: center;
   font-size: 1.4rem;
   font-style: italic;
   color: #555;

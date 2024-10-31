@@ -1,2 +1,5 @@
 dist-newstyle/cache/
 dist-newstyle/tmp/
+_cache/
+_site/
+.stack-work/
