@@ -1,0 +1,15 @@
+[package]
+name = "brvtalcake-github-io"
+version = "0.1.0"
+authors = ["Axel PASCON <axlpascon@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+dioxus = { version = ">=0.6.0-alpha.4", features = ["web", "router"] }
+
+# Debug
+dioxus-logger = "*"
+manganis = "*"
