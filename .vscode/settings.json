@@ -1,0 +1,10 @@
+{
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "rust-analyzer.cargo.targetDir": ".rust-analyzer/target",
+    "rust-analyzer.rustfmt.extraArgs": [
+        "--config",
+        "brace_style=AlwaysNextLine,control_brace_style=AlwaysNextLine"
+    ]
+}
