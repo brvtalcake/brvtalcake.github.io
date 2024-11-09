@@ -6,6 +6,13 @@
 /.dioxus/
 /.keep/
 
+**/*.rs.bk
+Cargo.lock
+bin/
+pkg/
+wasm-pack.log
+
+
 # this file will generate by tailwind:
 /assets/tailwind.css
 
