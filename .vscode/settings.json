@@ -6,5 +6,8 @@
     "rust-analyzer.rustfmt.extraArgs": [
         "--config",
         "brace_style=AlwaysNextLine,control_brace_style=AlwaysNextLine"
-    ]
+    ],
+    /* "rust-analyzer.linkedProjects": [
+        "brvtalcake-website-wasm"
+    ] */
 }
