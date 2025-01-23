@@ -28,8 +28,8 @@ a:hover {
 /* ul[class=tree] and every ul under it loses all alignment, and bullet
  * style.
  */
-ul.tree,
-ul.tree ul {
+menu.tree,
+menu.tree ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ ul.tree ul {
 /* Every ul under ul[class=tree] gets an indent of 1em, and a background
  * image (vertical line) applied to all nodes under it (repeat-y)
  */
-ul.tree ul {
+menu.tree ul {
   padding-left: 1em;
   background: url(/assets/vline.png) repeat-y;
 }
@@ -46,7 +46,7 @@ ul.tree ul {
 /* ... except the last ul child in every ul; so no vertical lines for
  * the children of the last ul
  */
-ul.tree ul:last-child {
+menu.tree ul:last-child {
   background: none;
 }
 
@@ -55,7 +55,7 @@ ul.tree ul:last-child {
  *  - gets a background image (tilted T), to denote that its a node
  *  - sets height to match the height of background image
  */
-ul.tree li {
+menu.tree li {
   margin: 0;
   padding: 0 1.2em;
   background: url(/assets/node.png) no-repeat;
@@ -66,7 +66,7 @@ ul.tree li {
 /*  The last li gets a different background image to denote it as the
  *  end of branch
  */
-ul.tree li:nth-last-of-type(1) {
+menu.tree li:nth-last-of-type(1) {
   background: url(/assets/lastnode.png) no-repeat;
 }
 
