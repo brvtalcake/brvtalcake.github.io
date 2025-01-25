@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.environmentChangesIndicator": "on",
+    //"python.terminal.shellIntegration.enabled": false,
+    //"terminal.integrated.shellIntegration.decorationsEnabled": "never",
+    "terminal.integrated.shellIntegration.enabled": false
+}
