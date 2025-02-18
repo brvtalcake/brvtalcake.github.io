@@ -29,7 +29,12 @@ index_format = "elasticlunr_json"
 smart_punctuation = true
 bottom_footnotes = true
 highlight_code = true
-highlight_theme = "ayu-light"
+#highlight_theme = "ayu-light"
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "ayu-light", filename = "syntax-theme-dark.css" },
+  { theme = "ayu-dark", filename = "syntax-theme-light.css" },
+]
 
 [extra]
 toc = true
@@ -48,7 +53,7 @@ menu = [
     { name = "/projects", url = "/projects", weight = 2 },
     { name = "/about", url = "/about", weight = 3 },
     { name = "/tags", url = "/tags", weight = 4 }
-#    ,{ name = "/by-lang", url = "/language", weight = 5 }
+    ,{ name = "/by-lang", url = "/by-language", weight = 5 }
 ]
 
 socials = [

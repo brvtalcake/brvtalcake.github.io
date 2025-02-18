@@ -1,0 +1,8 @@
+
+- Fork the theme to make the following changes:
+  - Make darker the background color of light theme code blocks (in sass/parts/_code.scss)
+  - Fix markdown's foldable list style
+- Add a custom template for the 'by-lang' page
+- Write stuff for the blog
+- Publish on github pages (at brvtalcake.github.io)
+- Publish on brvtalcake.nullware.dev if possible
