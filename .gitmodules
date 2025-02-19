@@ -1,0 +1,3 @@
+[submodule "themes/custom-apollo"]
+	path = themes/custom-apollo
+	url = https://github.com/brvtalcake/apollo
