@@ -1,5 +1,5 @@
 +++
-title= "In French"
+title = "In French"
 description = "Posts written in French"
 #path = "by-language"
 #sort_by = "weight"
