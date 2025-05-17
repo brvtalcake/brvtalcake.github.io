@@ -1,0 +1,32 @@
+{
+    "editor.tabCompletion": "off",
+    "rust-analyzer.check.workspace": true,
+    "rust-analyzer.cargo.buildScripts.enable": true,
+    "rust-analyzer.diagnostics.enable": true,
+    "rust-analyzer.hover.memoryLayout.niches": true,
+    "rust-analyzer.hover.memoryLayout.enable": true,
+    "rust-analyzer.hover.memoryLayout.alignment": "both",
+    "rust-analyzer.hover.memoryLayout.offset": "both",
+    "rust-analyzer.hover.memoryLayout.size": "both",
+    "rust-analyzer.procMacro.enable": true,
+    "rust-analyzer.lens.enable": true,
+    "rust-analyzer.rustfmt.rangeFormatting.enable": true,
+    "rust-analyzer.typing.triggerChars": "=.{(<>",
+    "rust-analyzer.signatureInfo.documentation.enable": true,
+    "rust-analyzer.signatureInfo.detail": "full",
+    //"rust-analyzer.rustfmt.extraArgs": [
+    //    "--config-path",
+    //    "${workspaceFolder}/rustfmt.toml",
+    //]
+    "rust-analyzer.rustfmt.overrideCommand": [
+        "leptosfmt",
+        "--stdin",
+        "--rustfmt"
+    ],
+    "tailwindCSS.experimental.classRegex": [
+        [
+            "#[tw\\\\([^\\]]*class\\s*=\\s*\"([^\"]*)\"\\)]",
+            "\"([^\"]*)\""
+        ]
+    ]
+}

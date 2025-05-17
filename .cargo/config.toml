@@ -1,0 +1,14 @@
+[build]
+target = "wasm32-unknown-unknown"
+rustflags = [
+    "-C",
+    "target-feature=+atomics,+bulk-memory,+extended-const,+multivalue,+mutable-globals,+nontrapping-fptoint,+reference-types,+sign-ext,+simd128,+tail-call,+bulk-memory-opt,+multimemory",
+    #"target-feature=+atomics,+bulk-memory,+exception-handling,+extended-const,+multivalue,+mutable-globals,+nontrapping-fptoint,+reference-types,+sign-ext,+simd128,+tail-call,+bulk-memory-opt,+multimemory",
+]
+
+[unstable]
+build-std = ['std', 'panic_abort']
+
+#[unstable]
+#build-std = ["core", "alloc", "compiler_builtins"]
+#build-std-features = ["compiler-builtins-mem"]

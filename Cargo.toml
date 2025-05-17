@@ -1,0 +1,45 @@
+[package]
+name = "brvtalcake-rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bitflags = { version = "2.9.1", features = ["std", "arbitrary", "serde", "bytemuck"] }
+console_error_panic_hook = "0.1.7"
+leptos = { version = "0.8.2", features = [
+    "csr",
+    "nightly",
+    "nonce",
+    "tracing",
+] }
+leptos-use = "0.15.7"
+tailwind_fuse = { version = "0.3.2", features = ["variant"] }
+turf = "0.10.1"
+
+[package.metadata.turf]
+minify = true
+load_paths = ["scss"]
+browser_targets = [
+    "defaults and fully supports es6-module and fully supports es6 and fully supports wasm and fully supports wasm-threads and fully supports wasm-simd and fully supports wasm-bulk-memory and fully supports wasm-mutable-globals and fully supports wasm-reference-types and fully supports wasm-signext and fully supports wasm-nontrapping-fptoint and fully supports wasm-multi-value and fully supports wasm-bigint and fully supports webworkers",
+]
+
+[package.metadata.turf.class_names]
+template = "<original_name>-<id>-<name_hash_short>-<style_sheet_hash_short>"
+
+[package.metadata.turf.file_output]
+global_css_file_path = "public/turf-generated/everything.css"
+separate_css_files_path = "public/turf-generated/classes/"
+
+[package.metadata.turf-dev]
+minify = true
+load_paths = ["scss/common"]
+browser_targets = [
+    "defaults and fully supports es6-module and fully supports es6 and fully supports wasm and fully supports wasm-threads and fully supports wasm-simd and fully supports wasm-bulk-memory and fully supports wasm-mutable-globals and fully supports wasm-reference-types and fully supports wasm-signext and fully supports wasm-nontrapping-fptoint and fully supports wasm-multi-value and fully supports wasm-bigint and fully supports webworkers",
+]
+
+[package.metadata.turf-dev.class_names]
+template = "<original_name>-<id>-<name_hash_short>-<style_sheet_hash_short>"
+
+[package.metadata.turf-dev.file_output]
+global_css_file_path = "public/turf-generated/everything.css"
+separate_css_files_path = "public/turf-generated/classes/"
