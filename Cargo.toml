@@ -4,8 +4,11 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+arc-swap = "1.7.1"
 bitflags = { version = "2.9.1", features = ["std", "arbitrary", "serde", "bytemuck"] }
 console_error_panic_hook = "0.1.7"
+formatx = "0.2.4"
+lazy_static = "1.5.0"
 leptos = { version = "0.8.2", features = [
     "csr",
     "nightly",
@@ -13,6 +16,7 @@ leptos = { version = "0.8.2", features = [
     "tracing",
 ] }
 leptos-use = "0.15.7"
+leptos_router = { version = "0.8.2", features = ["nightly", "tracing"] }
 tailwind_fuse = { version = "0.3.2", features = ["variant"] }
 turf = "0.10.1"
 

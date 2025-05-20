@@ -1,0 +1,24 @@
+.toc-container {
+  .toc-title {
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px; // Space for the arrow
+
+    &:before {
+      content: '►'; // 'right pointing triangle' character
+      position: absolute;
+      left: 0;
+      font-family: 'Times New Roman', Times, serif;
+      transition: transform 0.3s ease; // Smooth transformation
+    }
+
+    &.expanded:before {
+      transform: rotate(90deg); // Arrow points up when expanded or on hover
+    }
+  }
+
+  /* .toc-list {
+    display: none; // ToC is hidden by default
+    // Removed transition on display, not effective
+  } */
+}

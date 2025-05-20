@@ -81,6 +81,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dde20b3d026af13f561bdd0f15edf01fc734f0dafcedbaf42bba506a9517f223"
 
 [[package]]
+name = "arc-swap"
+version = "1.7.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "69f7f8c3906b62b754cd5326047894316021dcfe5a194c8ea52bdd94934a3457"
+
+[[package]]
 name = "async-lock"
 version = "3.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -176,10 +182,14 @@ dependencies = [
 name = "brvtalcake-rs"
 version = "0.1.0"
 dependencies = [
+ "arc-swap",
  "bitflags",
  "console_error_panic_hook",
+ "formatx",
+ "lazy_static",
  "leptos 0.8.2",
  "leptos-use",
+ "leptos_router",
  "tailwind_fuse",
  "turf",
 ]
@@ -614,6 +624,12 @@ checksum = "e13624c2627564efccf4934284bdd98cbaa14e79b0b5a141218e507b3a823456"
 dependencies = [
  "percent-encoding",
 ]
+
+[[package]]
+name = "formatx"
+version = "0.2.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d8866fac38f53fc87fa3ae1b09ddd723e0482f8fa74323518b4c59df2c55a00a"
 
 [[package]]
 name = "futures"
@@ -1324,6 +1340,44 @@ dependencies = [
  "syn 2.0.101",
  "tracing",
  "uuid",
+]
+
+[[package]]
+name = "leptos_router"
+version = "0.8.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5d1b70dbd176bd0129e5db0e2ed48b7ff076c1b17cf52bbd0e85dcc3e6b9cbc0"
+dependencies = [
+ "any_spawner 0.3.0",
+ "either_of",
+ "futures",
+ "gloo-net",
+ "js-sys",
+ "leptos 0.8.2",
+ "leptos_router_macro",
+ "once_cell",
+ "or_poisoned",
+ "reactive_graph 0.2.2",
+ "rustc_version",
+ "send_wrapper",
+ "tachys 0.2.2",
+ "thiserror 2.0.12",
+ "tracing",
+ "url",
+ "wasm-bindgen",
+ "web-sys",
+]
+
+[[package]]
+name = "leptos_router_macro"
+version = "0.8.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8403f583a69812524b98c97f2ed0258771e205cd0f715b1bc6ba5e4f70dcb94b"
+dependencies = [
+ "proc-macro-error2",
+ "proc-macro2",
+ "quote",
+ "syn 2.0.101",
 ]
 
 [[package]]
